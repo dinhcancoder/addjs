@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add + Delete + Edit </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="form" id="form">
+        <div class="form__title">
+            <h3 class="form__title-text">Sinh viên</h3>
+        </div>
+        <div class="form__input">
+            <div class="form__input-btn">
+                <span>Mã sinh viên</span>
+                <input type="text" class="inputElement masinhvien" id="Mã sinh viên">
+                <p class="error"></p>
+            </div>
+            <div class="form__input-btn">
+                <span>Tên sinh viên</span>
+                <input type="text" class="inputElement tensinhvien" id="Tên sinh viên">
+                <p class="error"></p>
+            </div>
+            <div class="form__input-btn">
+                <span>Số điện thoại</span>
+                <input type="text" class="inputElement sodienthoai" id="Số điện thoại">
+                <p class="error"></p>
+            </div>
+            <div class="form__input-btn">
+                <span>Email</span>
+                <input type="text" class="inputElement email" id="Email">
+                <p class="error"></p>
+            </div>
+        </div>
+        <div class="form__submit">
+            <button onclick="add()">Thêm sinh viên</button>
+        </div>
+    </div>
+
+    <table id="tb">
+        <thead>
+            <tr>
+                <th>Mã sinh viên</th>
+                <th>Tên sinh viên</th>
+                <th>Số điện thoại</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    
+    <script src="./index.js"></script>
+
+</body>
+</html>
